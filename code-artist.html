@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- 
+    SITE 1101 Principles of Information Systems 
+    (c)202X by Name Surname 
+    Submitted in partial fulfillment of the requirements of the course.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">  
+        <script type="text/javascript" src="scripts.js"></script> 
+        <nav id="navigation">
+            <a href="index.html">Introduction</a>
+            <a  href="team-members.html">About Us</a>
+            <a href="hour-of-code.html">Hour of Code</a>
+            <a href="web-project.html">Web project</a>
+            <a class='navbutton'href="code-artist.html">Code Art</a>
+        </nav>      
+    </head>
+    <body>
+        #Homework 3: How websites work?
+        <div style="text-align:center">
+            <canvas id="art-canvas" width="640" height="480">
+                Sorry ... your browser doesn't support the HTML5 canvas element.
+            </canvas>        
+        </div>          
+
+        <script type="text/javascript">
+            // Get reference to the 2D context of the canvas
+            let canvas = document.getElementById("art-canvas");
+            let context = canvas.getContext("2d");
+            // Set the color for drawing lines using red, green and blue components
+            // context.strokeStyle = 'rgb(255, 0, 0)';
+            context.strokeStyle = `rgb(${255 * Math.random()}, ${255 * Math.random()}, ${255 * Math.random()})`;
+            DrawSpiral(context);
+        </script>
+    </body>
+</html>

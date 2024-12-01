@@ -1,0 +1,29 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+#navigation{
+    background-color: rgb(27, 27, 125);
+    height:40px;
+    display: flex;
+    gap: 100px;
+    padding: 20px; 
+}
+
+#header{
+    text-align: center;
+}
+
+#introtext{
+    margin: 0px;
+    background-color: rgb(235, 237, 216);
+}
+
+.navbutton, a:hover{
+    background-color: rgb(93, 89, 83);  
+    opacity: 70%;
+    height: 25px;
+}
+a{
+    color: aliceblue;
+}
